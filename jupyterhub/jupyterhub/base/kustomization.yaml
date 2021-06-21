@@ -6,14 +6,15 @@ resources:
 - jupyterhub-db-pvc.yaml
 - jupyterhub-db-dc.yaml
 - jupyterhub-db-service.yaml
-- jupyterhub-img-imagestream.yaml
 - jupyterhub-dc.yaml
 - jupyterhub-service.yaml
 - jupyterhub-serviceaccount.yaml
 - jupyterhub-role.yaml
 - jupyterhub-rolebinding.yaml
+- jupyterhub-nodereader-rolebinding.yaml
 - jupyterhub-route.yaml
 - jupyterhub-singleuser-profiles-configmap.yaml
+- jupyterhub-singleuser-profiles-sizes-configmap.yaml
 - jupyterhub-spark-operator-configmap.yaml
 - jupyterhub-groups-configmap.yaml
 

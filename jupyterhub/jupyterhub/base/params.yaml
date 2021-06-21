@@ -1,6 +1,8 @@
 varReference:
 - path: roleRef/namespace
   kind: RoleBinding
+- path: subjects/namespace
+  kind: ClusterRoleBinding
   apiGroup: authorization.openshift.io
 - path: data
   kind: ConfigMap
@@ -9,4 +11,6 @@ varReference:
 - path: spec/template/spec/containers/env/valueFrom/configMapKeyRef/name
   kind: DeploymentConfig
 - path: spec/template/spec/containers/env/valueFrom/secretKeyRef/name
+  kind: DeploymentConfig
+- path: spec/template/spec/initContainers/env/valueFrom/secretKeyRef/name
   kind: DeploymentConfig
